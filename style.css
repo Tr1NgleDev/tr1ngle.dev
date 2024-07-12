@@ -1,0 +1,333 @@
+/* mfw my CSS still sucks */
+/* please dont look at this */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root
+{
+	--text: rgb(255, 255, 255);
+	--backgroundA: rgb(10, 10, 14);
+	--backgroundB: rgb(12, 12, 20);
+	--primary: rgb(162, 40, 210);
+	--secondary: rgb(241, 103, 103);
+	--outline: rgba(255, 255, 255, 0.3);
+	--outlineDark: rgba(17, 17, 17, 0.3);
+	--glow: rgba(82, 82, 90, 0.8);
+	
+	--cyan4d: rgb(121, 214, 248);
+	--magenta4d: rgb(242, 89, 191);
+}
+
+@font-face
+{
+	font-family: 'CascadiaCode';
+	src: url('fonts/CascadiaCode.woff2') format('woff2');
+}
+
+*
+{
+	letter-spacing: -0.1svw;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+
+	font-family: 'CascadiaCode', monospace;
+	color: var(--text);
+	background: linear-gradient(var(--backgroundA), var(--backgroundB));
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 100%;
+	height: auto;
+	min-height: 100svh;
+	display: flex;
+	
+	justify-content: left;
+	align-items: start;
+}
+
+.tr1ngle-text
+{
+	padding-left: 1.5svw;
+	padding-top: 3svw;
+	font-size: 5svw;
+	text-shadow: 0 0 1svw var(--glow);
+	letter-spacing: -0.2svw;
+}
+
+.tr1ngle-pfp
+{
+	margin-left: 2svw;
+	margin-top: 2svw;
+	width: 8svw;
+	border-radius: 1.5svw;
+	outline-color: var(--outline);
+	outline-style: solid;
+	outline-width: 0.05svw;
+	box-shadow: 0 0 4svw 0.5svw var(--glow);
+}
+
+.panel-bio
+{
+	position: absolute;
+
+	margin-left: 35svw;
+	margin-top: 2.5svh;
+	margin-bottom: 2.5svh;
+	width: 63.75svw;
+	height: auto;
+	min-height: 95svh;
+
+	border-radius: 1.5svw;
+	outline-style: solid;
+	outline-width: 0.1svw;
+	outline-color: var(--outline);
+
+    display: flex;
+	flex-flow: column;
+
+	box-shadow: 0 0 100svw -5svw var(--glow);
+
+	background: rgba(10, 18, 22, 0.48);
+	border-radius: 10px;
+	backdrop-filter: blur(11px);
+	-webkit-backdrop-filter: blur(11px);
+}
+.panel-bio *
+{
+	margin-bottom: 0.5svw;
+	font-weight: 300;
+}
+
+.panel-projects
+{
+	position: absolute;
+
+	margin-left: 2svw;
+	margin-top: 12svw;
+	margin-bottom: 2.5svh;
+	width: 30.5svw;
+	height: auto;
+	min-height: calc(97.5svh - 12svw);
+
+	border-radius: 1.5svw;
+	outline-style: solid;
+	outline-width: 0.1svw;
+	outline-color: var(--outline);
+
+    display: flex;
+	flex-flow: column;
+
+	box-shadow: 0 0 100svw -5svw var(--glow);
+
+	background: rgba(10, 18, 22, 0.48);
+	border-radius: 10px;
+	backdrop-filter: blur(11px);
+	-webkit-backdrop-filter: blur(11px);
+}
+.panel-projects *
+{
+	margin-bottom: 0.5svw;
+	font-weight: 300;
+}
+
+h1
+{
+	padding-left: 1.5svw;
+
+	font-size: 1.75svw;
+	font-weight: 300;
+
+	text-shadow: 0 0 0.2svw var(--glow);
+	
+	white-space: break-spaces;
+}
+
+h2
+{
+	margin-top: 0svw;
+	padding-left: 2svw;
+
+	font-size: 1.1svw;
+	font-weight: 300;
+	
+	white-space: break-spaces;
+}
+
+.link
+{
+	display: flex;
+	flex-flow: row;
+	text-decoration: none;
+	width: fit-content;
+	height: fit-content;
+}
+.link img
+{
+	margin-left: 2.5svw;
+	width: 3svw;
+	border-radius: 10px;
+}
+.link h2
+{
+	color:var(--text);
+	margin-top: 0.4svw;
+	padding-left: 1svw;
+
+	font-size: 1.75svw;
+	font-weight: 300;
+
+	letter-spacing: 0;
+}
+
+.single-line
+{
+	display: flex;
+	flex-flow: row;
+	width: fit-content;
+	height: fit-content;
+	min-height: 0;
+}
+
+.bg-waves
+{
+	position: fixed;
+	opacity: 0.5;
+	height: auto;
+	min-height: 200svh;
+	width: 100svw;
+	margin-top: -5svh;
+}
+
+.opacity-0-1
+{
+	opacity: 0.1;
+}
+.opacity-0-2
+{
+	opacity: 0.2;
+}
+.opacity-0-3
+{
+	opacity: 0.3;
+}
+.opacity-0-4
+{
+	opacity: 0.4;
+}
+.opacity-0-5
+{
+	opacity: 0.5;
+}
+.opacity-0-6
+{
+	opacity: 0.6;
+}
+.opacity-0-7
+{
+	opacity: 0.7;
+}
+.opacity-0-8
+{
+	opacity: 0.8;
+}
+.opacity-0-9
+{
+	opacity: 0.9;
+}
