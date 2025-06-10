@@ -293,6 +293,7 @@ h2
 	min-height: 200svh;
 	width: 100svw;
 	margin-top: -5svh;
+	pointer-events: none;
 }
 
 .opacity-0-1
